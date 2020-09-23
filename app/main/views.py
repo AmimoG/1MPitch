@@ -82,7 +82,7 @@ def new_pitch():
         return redirect(url_for('.index'))
 
     title = 'New pitch'
-    return render_template('new_pitch.html',title = title,pitch_form=pitch_form )
+    return render_template('pitch.html',title = title,form=pitch_form )
 
 @main.route('/pitches/interview_pitches')
 def interview_pitches():
